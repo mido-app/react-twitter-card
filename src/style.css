@@ -1,0 +1,58 @@
+.midoapp-twitter-card {
+  display: grid;
+  grid-template:
+    "user-icon user-name  option-btn"
+    "user-icon tweet-body tweet-body"
+    "user-icon action-btn-area action-btn-area";
+  /* grid-gap: 4px; */
+  width: 100%;
+}
+
+.midoapp-twitter-card .user-icon-area {
+  grid-area: user-icon;
+}
+
+.midoapp-twitter-card .user-icon-area .user-icon {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: auto;
+}
+
+.midoapp-twitter-card .user-name-area {
+  grid-area: user-name;
+  font-size: 14px;
+}
+
+.midoapp-twitter-card .user-name-area .user-name {
+  font-weight: bold;
+  color: #14171a;
+}
+
+.midoapp-twitter-card .user-name-area .user-id {
+  color: #657786;
+  margin-left: 4px;
+}
+
+.midoapp-twitter-card .option-btn-area {
+  grid-area: option-btn;
+  text-align: right;
+  color: #657786;
+}
+
+.midoapp-twitter-card .tweet-body-area {
+  grid-area: tweet-body;
+  font-size: 14px;
+  color: #14171a;
+}
+
+.midoapp-twitter-card .action-btn-area {
+  grid-area: action-btn-area;
+  margin-top: 10px;
+  color: #657786;
+}
+
+.midoapp-twitter-card .action-btn-area .action-btn {
+  margin-right: 30px;
+}
